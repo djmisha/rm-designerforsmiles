@@ -1,0 +1,71 @@
+/* ------------------------
+   Variables
+------------------------ */
+
+//https://github.com/ahmadawais/WPGulp
+
+$DarkRed: #701b15;
+
+$lightRed :#7e211b;
+
+$Organge: #e1ab4c;
+
+$pink: #fdf4e7;
+
+$primaryColor: $DarkRed; // link color, buttons, nav, footer, etc
+$primaryAlt: $lightRed; //link hover
+
+$primaryHighlight: $DarkRed;
+
+$secondaryColor: $Organge;
+$secondaryAlt: $pink;
+
+$tertiaryColor: $pink;
+$tertiaryAlt: #000;
+
+$lightColor: #ffffff;
+$darkColor: #000;
+
+// Font Family
+
+$primaryFont: 'Lato', sans-serif;
+$secondaryFont: kepler-std-display, serif;
+$highlightFont:  'Lato', sans-serif;
+
+$sidebar: 350px;
+
+// Font Weight
+
+$thin: 100;
+$light: 300;
+$normal: 400;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;
+$heavy: 900;
+
+// Media Query break points
+
+$tablet: 768px;
+$desktop: 1080px;
+$full: 1480px;
+
+$ipad-min: 768px;
+$ipad-max: 1024px;
+
+$ipadpro-min: 1024px;
+$ipadpro-max: 1366px;
+
+$ipad: ipads;
+$ipads: ipads;
+
+// Increasing color
+
+$step: 1;
+
+// Defaults
+
+$defaultfont: $primaryFont;
+$defaultcolor: $darkColor;

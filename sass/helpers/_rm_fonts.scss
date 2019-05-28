@@ -1,0 +1,23 @@
+//Some default settings
+.smoothie { //text rendering fix stuff
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin smoothie(){
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+%imgdefaults {
+	visibility: visible; //placeholder for SASS error reasons
+}
+
+@mixin disablelink{
+	pointer-events: none;
+	cursor: default;
+}
+
+//Setup Font Mixins Here
+	//ie: @mixin raleway{ font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+	//call by: @include raleway;

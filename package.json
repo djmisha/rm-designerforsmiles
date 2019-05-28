@@ -1,0 +1,18 @@
+{
+	"name": "RM-Theme",
+	"version": "1.0.0",
+	"main": "gulpfile.js",
+	"devDependencies": {
+		"gulp" 				: "3.9.1"
+	},
+	"dependencies": {
+		"time-require": "^0.1.2"
+	},
+	"scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Rubot",
+	"license": "ISC"
+}
+
+

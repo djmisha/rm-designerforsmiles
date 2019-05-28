@@ -1,0 +1,242 @@
+/* ------------------------
+   Typography (and primary body style)
+------------------------ */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: $defaultcolor;
+	background-color: $lightColor;
+	min-width: 320px;
+	text-align: center;
+	font: 14px/24px $defaultfont;
+	@include media($tablet) {
+		font: 16px/26px $defaultfont;
+	}
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+ul,
+ol,
+dl {
+}
+
+li {
+}
+
+.the-headline,
+.the-subheadline {
+	display: block;
+}
+
+h1 {
+	// font-family: $secondaryFont;
+	// font-weight: $regular;
+	// font-weight: 600;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.the-headline {
+	font-family: $primaryFont;
+	// font-style: italic;
+	span {
+		font-style: normal;
+		font-weight: 300;
+	}
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: $regular;
+	margin-bottom: 1.5rem;
+	line-height: 100%;
+}
+
+h2,
+.the-headline {
+	font-size: 30px;
+	line-height: 40px;
+	@include media($tablet) {
+		font-size: 44px;
+		line-height: 50px;
+	}
+	// @include media($desktop) {
+	// 	font-size: 50px;
+	// 	line-height: 55px;
+	// }
+}
+
+h3 {
+	font-size: 26px;
+	@include media($tablet) {
+		font-size: 34px;
+		line-height: 48px;
+	}
+}
+
+h4 {
+	font-size: 24px;
+	@include media($desktop) {
+		font-size: 30px;
+	}
+}
+
+h5,
+h6 {
+	font-size: 22px;
+	@include media($desktop) {
+		font-size: 28px;
+	}
+}
+
+a {
+	color: $darkColor;
+}
+
+blockquote {
+	font-family: $highlightFont;
+	font-style: italic;
+	@include media($desktop) {
+		@include font(25px, 110%);
+	}
+	footer {
+		font-style: normal;
+	}
+}
+
+section {
+	// margin: 20px;
+	@include media($desktop) {
+		// margin: 50px 65px;
+	}
+}
+
+section,
+main,
+.contain {
+	padding: 0 20px;
+	@include media($tablet) {
+		padding: 0 40px;
+	}
+	@include media($desktop) {
+		padding: 0  calc(40px + (50% - (#{$desktop} / 2)));
+	}
+	@include media(1280px) {
+		// padding: 0 calc(40px + (50% - (1280px / 2)));
+	}
+	@include media($full) {
+		// padding: 0  calc(40px + (50% - (#{$full} / 2)));
+	}
+}
+
+.is--device {
+	section,
+	main,
+	.contain {
+		@include media($desktop) {
+			padding: 0 20px;
+		}
+	}
+}
+
+/* ***************************************** */
+/* --------------- Layouts ----------------- */
+/* ***************************************** */
+
+/* -----------------------
+	Basic layout
+----------------------- */
+
+.container,
+.container-full {
+	position: relative;
+}
+
+.container {
+	max-width: $desktop;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* ------------------------
+	Header
+------------------------ */
+
+@import "header";
+
+/* ------------------------
+	Nav
+------------------------ */
+
+@import "menu_touch";
+@import "menu_hover";
+
+/* ------------------------
+	Content
+------------------------ */
+
+@import "content";
+
+/* ------------------------
+	Aside
+------------------------ */
+
+@import "sidebar";
+
+/* ------------------------
+	Footer Layout
+------------------------ */
+
+@import "footer";
+
+/* ------------------------
+	Forms & Form Elements
+------------------------ */
+
+@import "contact";
+
+/* ***************************************** */
+/* ---------- Specific Templates ----------- */
+/* ***************************************** */
+
+/* ------------------------
+	Home Page
+------------------------ */
+
+@import "front";
+
+/* ------------------------
+	Blog/Category/Archives
+------------------------ */
+
+@import "blog";
+
+/* ------------------------
+	Map
+------------------------ */
+
+// @import 'map';
+
+/* ------------------------
+	Flexible Content
+------------------------ */
+
+@import "flexible";
+
+/* ------------------------
+	Gallery
+------------------------ */
+
+@import "gallery";

@@ -11,7 +11,7 @@
 	right: 0px;
 	height: 60px;
 	// display: flex;
-	transition: all .5s ease-out;
+	transition: all .3s ease-out;
 	
 	@include media($tablet) {
 		// flex-direction: row-reverse;
@@ -131,6 +131,7 @@
 		}
 		&.chat-on i {
 			color: $secondaryColor;
+			font-weight: 900;
 		}		
 	}
 }
@@ -143,12 +144,13 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 150px;
+	margin-top: 60px;
+	min-height: 200px;
+	height: 40vw;
 	display: flex;
-	align-items: center;
-	// justify-content: center;
-	// flex-direction: column;
+	// align-items: center;
 	@include media($tablet) {
+		margin-top: 0px;
 		padding-top: 0;
 		background-size: cover;
 		height: 730px;
@@ -166,14 +168,30 @@
 	text-align: center;
 	// position: absolute;
 	// top: 65px;
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	// border: 1px solid red;
+	margin-top: 40px;
+	margin-left: 40px;
 
 	@include media($tablet) {
+		width: auto;
+		height: auto;
 		position: relative;
+		margin: 0 auto;
 		margin-left: 10vw;
+		margin-top: 300px;
 		// right: calc( 50% + 200px);
 	}
 	img {
-		// width: 290px;
-		margin: 0 auto;
+		width: 250px;
+		// display: none;
+		margin-left: -200px;
+		@include media($tablet) {
+			margin: 0 auto;
+			display: block;
+			width: auto;
+		}
 	}
 }

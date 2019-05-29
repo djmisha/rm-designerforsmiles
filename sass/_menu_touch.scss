@@ -46,12 +46,12 @@
 		a{
 			//  text-transform: uppercase;
 			//  letter-spacing: 1px;
-			font-family: $secondaryFont;
-
+			font-family: $primaryFont;
+			text-transform: uppercase;
 			text-decoration: none;
 			display: block;
 			color: rgba($lightColor, .9);  // Set color for menu items
-			font-size: 20px; // Set font size for menu items
+			font-size: 16px; // Set font size for menu items
 			line-height: 1em;
 			// font-weight: 100;
 		}

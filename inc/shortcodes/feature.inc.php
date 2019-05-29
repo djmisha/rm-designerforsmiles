@@ -12,8 +12,8 @@ function sc__feature( $atts , $content = null ){
 		<div class="feature-content">
 			<?php the_field('callout_section_content'); ?>
 		</div>
-		<div class="feature-image b-lazy" data-src="<?php the_field('callout_section_image'); ?>">
-			
+		<div class="feature-image">
+			<img src="<?php the_field('callout_section_image'); ?>" alt="image">
 		</div>
 	</div>
 

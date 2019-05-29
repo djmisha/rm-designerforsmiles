@@ -1,91 +1,44 @@
-.jump-links-split {
-	@include media($desktop) {
-		display: flex;
-		flex-direction: row-reverse;
-		flex-wrap: nowrap;
-		justify-content: space-around;
-		// align-items: center;
-		> div {
-			width: 50%;
-			height: 100%;
-		}
-	}	
-	.with-bg {
-		background-size: cover;
-		min-height: 400px;
-		@include media($desktop) {
-			min-height: 780px;
-		}
-	}
-}
+
 
 .flexible-jump-links {
 	.jump-links-content {
-		// margin-top: 40px;
-		// margin-bottom: 60px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		@include media($tablet) {
+			margin-top: 80px;
+			margin-bottom: 80px;
+		}
 	}
 	.jump-link-list {
 		width: 100%;
-		// background: rgba($tertiaryColor, 1);
-	}
-	.jump-link-list-border {
-		width: auto;
-		padding-top: 20px;
-		padding-bottom: 40px;
-		padding-left: 20px;
-		padding-right: 20px;
-		@include media($tablet) {
-			padding-top: 40px;
-			padding-left: 40px;
-			padding-right: 40px;
-		}
-		@include media($desktop) {
-			padding-top: 0;
-		}
-		h2 {
-			margin-top: 40px;
-
-			@include media($desktop) {
-				margin-top: 80px;
-				
-			}
-		}
 	}
 	.jump-link-list ul {
 		list-style: none;
 		display: flex;
 		justify-content: center;
-		flex-direction: column;
 		flex-wrap: wrap;
-		padding: 30px 20px;
 		margin: 0;
-		border: 2px solid rgba($primaryColor, 1);
-
 		@include media($tablet) {
 			margin: 0 auto;
-			// margin-top: 40px;
-			// margin-bottom: 40px;
-			// max-width: 1200px;
-			padding: 40px 20px 40px 20px;
 		}
 		li {
 			text-align: center;
-			text-transform: uppercase;
 			@include media($tablet) {
-				margin-bottom: 30px;
-				
+			 @include font(24px, 1.8em);
+			 font-weight: 100;
 			}
 			&:before {
 				display: none;
 			}
 		}
 		a {
-			letter-spacing: 1px;
+			// letter-spacing: 1px;
 			font-style: normal;
-			color: $primaryColor;
+			color: $darkColor;
 			text-decoration: none;
 			border-bottom: 2px solid transparent;
 			&:hover {
+				color: $primaryColor;
 				border-bottom: 2px solid $primaryColor;
 			}
 		}

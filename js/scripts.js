@@ -77,7 +77,7 @@
 		/*Change Up Sticky Footer on scroll down*/
 
     	$(window).scroll(function () {
-    	      if ($(window).scrollTop() > 450 && $('html').hasClass('not--device') 
+    	      if ($(window).scrollTop() > 50 && $('html').hasClass('not--device') 
     	      	&& 
 
     	      	$(window).width() > 1080
@@ -150,6 +150,16 @@
 			var caption = $(this).find("dd").text();
 			$(this).find("dt a").attr("data-caption", caption);
 		});
+
+
+
+		/*================================================================
+		=            Custom Landing Page Header, Append Items            =
+		================================================================*/
+
+		$(".tmpl_type_page_landing .site-crumbs").appendTo("header");
+		$(".tmpl_type_page_landing .page-title").appendTo("header");
+		$(".tmpl_type_page_landing .flexible-basic-content:first-of-type()").appendTo("header");
 
 
 

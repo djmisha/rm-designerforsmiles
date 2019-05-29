@@ -133,7 +133,7 @@ body.inside {
 	background: url('images/icon-dlogo.png') top center;
 	background-size: 50vw auto;
 	background-repeat: no-repeat;
-	background-position-y: 300px; 
+	background-position-y: 50vw; 
 	background-position-x:  calc(50% - 100px;); 
 	@include media($tablet) {
 		background-size: auto auto;

@@ -2,9 +2,9 @@
 
 .flexible-jump-links {
 	.jump-links-content {
-		margin-top: 40px;
+		margin-top: 0px;
 		margin-bottom: 40px;
-		@include media($tablet) {
+		@include media($desktop) {
 			margin-top: 80px;
 			margin-bottom: 80px;
 		}
@@ -22,15 +22,22 @@
 			margin: 0 auto;
 		}
 		li {
-			text-align: center;
-			@include media($tablet) {
-			 @include font(24px, 1.8em);
-			 font-weight: 100;
+				text-align: center;
+				@include media($tablet) {
+					@include font(24px, .9em);
+					font-weight: 100;
+					border-right: 1px solid $darkColor;
+					padding-right: 10px;
+					padding-left: 10px;
+					margin-bottom: 30px;
+					&:last-of-type {
+						border-right: none;
+					}
+				}
+				&:before {
+					display: none;
+				}
 			}
-			&:before {
-				display: none;
-			}
-		}
 		a {
 			// letter-spacing: 1px;
 			font-style: normal;
@@ -47,8 +54,8 @@
 
 .flexible-basic-content {
 	padding-top: 40px;
-	padding-bottom: 40px;
-	@include media($tablet) {
+	padding-bottom:20px;
+	@include media($desktop) {
 		padding-top: 100px;
 		padding-bottom: 80px;
 	}

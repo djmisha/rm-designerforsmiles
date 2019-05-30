@@ -380,9 +380,11 @@
                         "id": ""
                     },
                     "post_type": [
-                        "page"
+                        "page",
+                        "rmg-case",
+                        "rmg-category"
                     ],
-                    "taxonomy": [],
+                    "taxonomy": "",
                     "allow_null": 0,
                     "multiple": 0,
                     "return_format": "id",
@@ -548,5 +550,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1558112579
+    "modified": 1559249629
 }

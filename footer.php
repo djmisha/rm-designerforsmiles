@@ -32,7 +32,7 @@
 	
 
 	<section class="upper-footer" >
-		<span class="the-headline">Contact Us <span>Today</span>!</span>
+		<span class="the-headline">Contact Us <span>Today!</span></span>
 		<div class="footer-splitter">
 			 <div class="footer-address">
 			 	<a href="<?php bloginfo('url'); ?>">
@@ -96,7 +96,7 @@
 
 		<?php if(!is_page(array('contact-us'))): ?>
 		<div class="sticky-form">
-			<span>Contact Us Today!</span>
+			<span>Contact Us Today:</span>
 			<?php echo do_shortcode('[seaforms name="sticky-contact-form"]'); ?>
 
 			<div class="mobile-social">

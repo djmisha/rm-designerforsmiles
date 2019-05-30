@@ -103,9 +103,9 @@ aside {
 	padding-left: 20px;
 	padding-right: 20px;
 	text-align: center;
-	background:  rgba( $primaryColor, .9);
+	background:  rgba( $tertiaryColor, 1);
 	.the-headline {
-		color: $lightColor;
+		color: $darkColor;
 		display: block;
 		margin-bottom: 30px;
 		@include media($tablet) {
@@ -116,7 +116,7 @@ aside {
 		margin-bottom: 10px;
 	}
 	a {
-		color: $lightColor;
+		color: $darkColor;
 		text-decoration: none;
 		text-transform: uppercase;
 		&:hover {

@@ -32,8 +32,8 @@
 									<!-- Fax: <?php //the_sub_field('fax','options'); ?> -->
 								</div>
 							</div>
-							<div class="the-hours">
-								<!-- <strong>Office Hours</strong> -->
+							<div class="the-hours"><br>
+								<strong>Office Hours</strong>
 								<div class="consult">
 									<?php the_sub_field('hours', 'option'); ?>
 								</div>

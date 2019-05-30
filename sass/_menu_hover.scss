@@ -1,29 +1,43 @@
 $menuHeight : 60px;
 
+/* Custom Home Icon */
 
 @include media($desktop) {
 	.hover-menu .menu-item-2329 {
 		padding-left: 0px;
 		padding-right: 0px;
-		background: $primaryAlt;
+		background: $darkColor !important;
+		position: relative;
+		width: 60px;
+		background-color: $primaryAlt !important;
+	    z-index: 1000;
+		a {
+			position: relative;
+			&:hover {
+				background: transparent !important;
+			}
+		}
 		&:before {
 		    content: '';
 		    position: absolute;
 		    top: 17px;
-		    right: calc(50% - 12.5px);
+		    right: calc(50% - 42px);
+		    right: 18px;
 			background-image: url('images/icon-home.png');
 		    background-size: 23px 23px;
 		    width: 23px;
 		    height: 23px;
-		    z-index: 1;
+		    z-index: -1;
 		}
 		span {
-			// position: absolute;
+			position: absolute;
 			left: -9999px;
 			color: $primaryAlt;
 		}
 	}
 }
+
+/* Start Hover Menu */
 
 .hover-menu {
 	// position: absolute;
@@ -101,8 +115,17 @@ $menuHeight : 60px;
 	}
 
 	a {
-		font-size: 14px; 
+		font-size: 10.5px; 
 		line-height: 5px;
+		@include media(1120px) {
+			font-size: 11.5px; 
+		}
+		@include media(1220px) {
+			font-size: 13px; 
+		}
+		@include media(1300px) {
+			font-size: 14px; 
+		}
 	}
 
 	.sub-menu {

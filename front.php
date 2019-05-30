@@ -8,19 +8,16 @@
 <div class="welcome-parallax will-parallax parallax-welcome b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-welcome.jpg">
 	<div class="welcome" id="skiptomaincontent">
 		<div class="welcome-cta">
+			<div class="bg-header-cruve-home-mobile"></div>
 			<div class="welcome-logo">
-				<?php echo is_front_page() ? '<h1>' : ''; ?>
-				<a href="<?php bloginfo('url'); ?>">
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Designer for Smiles">
-				</a>
-				<?php echo is_front_page() ? '</h1>' : ''; ?>
-			</div>
+			<h1><a href="<?php bloginfo('url'); ?>"><div> <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Designer Smiles"> </div></a></h1> </div>
 			<h2><?php the_field('welcome_headline'); ?></h2>
 			<?php the_field('welcome_content'); ?>
 			<a href="<?php the_field('gallery_button'); ?>" class="button" rel="nofollow" rel="nofollow">Make an Appointment <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-cal.png" alt="icon"></a>
 			<a href="<?php the_field('gallery_button'); ?>" class="button" rel="nofollow" rel="nofollow">Smile Gallery <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-photo.png" alt="icon"></a>
 		</div>
 	</div>
+	<div class="bg-header-cruve-home"></div>
 </div> 
 
 
@@ -64,6 +61,7 @@
 			<?php endwhile; ?>
 		</ul>
 	<?php endif; ?>
+	<div class="bg-header-cruve-red-top"></div>
 </div>
 
 
@@ -81,6 +79,7 @@
 	<section>
 		<a href="<?php bloginfo('template_directory'); ?>/gallery/" class="button" rel="nofollow">View Our Smile Gallery</a>
 	</section>
+	<div class="bg-header-cruve"></div>
 </div>
 
 <?php get_footer()?>

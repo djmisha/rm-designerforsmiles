@@ -157,10 +157,25 @@
 		=            Custom Landing Page Header, Append Items            =
 		================================================================*/
 
-		$(".tmpl_type_page_landing .site-crumbs").appendTo("header");
-		$(".tmpl_type_page_landing .page-title").appendTo("header");
-		$(".tmpl_type_page_landing .flexible-basic-content:first-of-type()").appendTo("header");
+		function checkWidth() {
+			var $window = $(window);
+			var windowsize = $window.width();
+			if (windowsize >= $desktop) {
+				// $(".tmpl_type_page_landing .site-crumbs").appendTo("header");
+				$(".tmpl_type_page_landing .page-title").appendTo("header");
+				$(".tmpl_type_page_landing .flexible-basic-content:first-of-type()").appendTo("header");
 
+			  }
+			  else {
+			  	// $(".tmpl_type_page_landing .site-crumbs").prependTo(".interior");
+			  	$(".tmpl_type_page_landing .page-title").prependTo(".content");
+			  	$(".tmpl_type_page_landing .flexible-basic-content:first-of-type()").prependTo(".content");
+			  }
+			}
+		// Execute on load
+		checkWidth();
+		// Bind event listener
+		$(window).resize(checkWidth);
 
 
 

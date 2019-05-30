@@ -19,7 +19,7 @@
 		// color: $primaryColor;
 		&:hover {
 			text-decoration: underline;
-			color: $secondaryColor;
+			// color: $secondaryColor;
 		}
 	}
 	h2 {
@@ -124,16 +124,16 @@ article p ~ h2 {
 		}
 		.current-crumb-item {
 			text-decoration: none;
-			color: #c1c9be;
+			// color: $tertiaryAlt;
 		}
 	}
 }
 
 body.inside {
-	background: url('images/icon-dlogo.png') top center;
-	background-size: 50vw auto;
+	background: url('images/icon-dlogo.png') center center;
+	background-size: 200px auto;
 	background-repeat: no-repeat;
-	background-position-y: 50vw; 
+	background-position-y: 400px; 
 	background-position-x:  calc(50% - 100px;); 
 	@include media($tablet) {
 		background-size: auto auto;
@@ -196,39 +196,78 @@ body.inside {
 				margin: 1em 20px;
 			}
 		}
-		ol {
-			counter-reset: item;
-			margin: 1em 10px;
+		ul.custom-links {
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 1.5em 10px;
+			list-style: none;
 			@include media($tablet) {
 				margin: 3em 50px;
 			}
-			> li {
-				display: block;
-				position: relative;
-
-				margin-bottom: 7px;
-				padding-left: 30px;
-
+			li {
+				text-align: center;
+				@include media($tablet) {
+					@include font(24px, .9em);
+					font-weight: 100;
+					border-right: 1px solid $darkColor;
+					padding-right: 10px;
+					padding-left: 10px;
+					margin-bottom: 30px;
+					&:last-of-type {
+						border-right: none;
+					}
+				}
 				&:before {
-					left: 0px;
-					position: absolute;
-					content: counter(item) ". ";
-					counter-increment: item;
-					color: $primaryColor;
-					font-weight: bold;
+					display: none;
 				}
 			}
+			a {
+			// letter-spacing: 1px;
+			font-style: normal;
+			color: $darkColor;
+			text-decoration: none;
+			border-bottom: 2px solid transparent;
+			&:hover {
+				color: $primaryColor;
+				border-bottom: 2px solid $primaryColor;
+			}
 		}
+	}
+	ol {
+		counter-reset: item;
+		margin: 1em 10px;
+		@include media($tablet) {
+			margin: 3em 50px;
+		}
+		> li {
+			display: block;
+			position: relative;
 
-		blockquote {
+			margin-bottom: 7px;
+			padding-left: 30px;
+
+			&:before {
+				left: 0px;
+				position: absolute;
+				content: counter(item) ". ";
+				counter-increment: item;
+				color: $primaryColor;
+				font-weight: bold;
+			}
+		}
+	}
+
+	blockquote {
 			// color: $secondaryColor;
 			margin: 40px 0;
 			margin-left: -20px;
 			font-family: $secondaryFont;
 			font-size: 18px;
 			line-height: 30px;
-			border-left: 10px solid #c8cdc3;
-			padding-left: 30px;
+			// border-left: 10px solid #c8cdc3;
+			// padding-left: 30px;
 			font-weight: 100;
 			// font-size: italic;
 			// margin-bottom: 40px;
@@ -252,7 +291,7 @@ body.inside {
 
 			strong {
 				// font-size: 25px;
-				color: #c8cdc3;
+				// color: #c8cdc3;
 			}
 		}
 	}
@@ -346,6 +385,8 @@ body.inside {
 
 
 
+
+
 /*==========================================
 =            Fill Width Section            =
 ==========================================*/
@@ -377,7 +418,115 @@ body.inside {
 }
 
 
-.onpage-reviews {
+
+.rmrr-sprinke-container {
+	background: #fbead2;
+	width: 100vw;
+	padding: 40px 0px;
+	position: relative;
+	left: -20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	@include media($tablet) {
+		left: -40px;
+		padding-top: 80px;
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	@include media($desktop) {
+		left: calc(((40px + (50vw - (#{$desktop} / 2)))) * -1);
+		
+	}
+	.rmrr-item.rmrr-item-sprinkle {
+		max-width: $desktop;
+		margin: 0 auto;
+		background: transparent !important;
+		blockquote {
+			flex-direction: column;
+			p {
+				position: relative;
+				z-index: 1;
+				font-family: $secondaryFont;
+				font-weight: 100;
+				z-index: 100;
+				@include font(20px, 1.5em);
+				@include media($tablet) {
+					@include font(30px, 1.5em);
+				}
+			}
+			cite p {
+				line-height: .7em;
+			}
+			&:before {
+				z-index: -1;
+				content: '';
+				background: url("images/icon-quote-test.png") top center no-repeat;
+				position: absolute;
+				background-size: 199px 139px;
+				width: 199px;
+				height: 139px;
+				z-index: 0;
+				left: calc(50% - 100px);
+				top: -40px;
+			}
+		}
+	}
+}
+
+
+
+/* Sprinkler Styles */
+/* Sprinkler Styles */
+/* Sprinkler Styles */
+/* Sprinkler Styles */
+
+.content {
+	#rmrr-tabs {li {&:before {display: none; } } }
+	.custom-reviews-ui {
+		margin-top: 40px;
+	}
+	.custom-reviews-ui #rmrr-tabs li.is-current-tab{
+		background-color: $primaryColor !important;
+		a {
+			color: $lightColor;
+		}
+		span {
+			background-color: $lightColor !important;
+			color: $darkColor;
+		}
+	}
+
+	.custom-reviews-ui .avg-rating-box.is-all {
+		background: $primaryColor !important;
+	}
+	.custom-reviews-ui .avg-rating-box,
+	.custom-reviews-ui #rmrr-tabs li {
+		background-color: $secondaryAlt !important;
+		a {
+			color:$primaryColor ;
+			text-decoration: none;
+		}
+	}
+}
+.custom-reviews-ui #rmrr-tabs li { 
+	span {
+		background-color: $primaryColor !important;
+		color: $lightColor;
+	}
+	.rmrr-tabs a span {
+		background-color: $primaryColor !important;
+
+	}
+	.rmrr-item blockquote {
+		padding: 0 !important;
+	}
+}
+
+
+
+
+.onpage-reviews  {
 	padding-top: 75px;
 	padding-bottom: 75px;
 	background: #fbead2;
@@ -394,9 +543,6 @@ body.inside {
 		z-index: 0;
 		left: calc(50% - 100px);
 		top: 40px;
-		@include media($desktop) {
-			// left: 100px;
-		}
 	}
 
 	p {
@@ -568,16 +714,21 @@ body.inside {
 
 body.inside.tmpl_type_page_landing {
 	@include media($desktop) {
-	background-position-y: 1010px;
+		background-position-y: 1010px;
 		
+	}
+	section.site-crumbs {
+		display: none !important;
+		text-align: left;
+		// padding-left: 0;
+		// padding-right: 0;
+		@include media($tablet) {
+			// padding-left: 120px;
+		}
 	}
 }
 
 .tmpl_type_page_landing header {
-	section.site-crumbs {
-		padding-left: 0;
-		padding-right: 0;
-	}
 	@include media($desktop) {
 		display: flex;
 		flex-wrap: wrap;
@@ -586,22 +737,35 @@ body.inside.tmpl_type_page_landing {
 		text-align: left;
 		color: $lightColor;
 	}
+	.inside-logo {
+		@include media($desktop) {
+			margin-top: 200px;
+			margin-bottom: 100px;
+			margin-left: 0;
+			padding: 0 calc(40px + (50% - (#{$desktop} / 2)));
+			@include media($full) {
+				margin-left: -150px;
+			}
+		}
+	}
 	h1 {
 		color: $lightColor;
 		margin-bottom: 0;
-		@include media($desktop) {
+		@include media($full) {
 			margin-left: -150px;
 		}
 	}
-	.inside-logo {
-		margin-top: 200px;
-		margin-left: 0;
-	}
 	.flexible-basic-content {
 		padding-top: 40px;
-		padding-right: 55%;
 		@include media($desktop) {
-			margin-left: -150px;
+			// padding-right: 55%;
+			// margin-left: 0px;
+		}
+		p {
+			max-width: 550px;
+			@include media($full) {
+				margin-left: -150px;
+			}
 		}
 	}
 }

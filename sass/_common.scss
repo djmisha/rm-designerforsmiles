@@ -81,10 +81,8 @@ a.page-numbers.current,
 	font-family: $primaryFont;
 	padding: 15px 40px;
 	transition: all 0.2s ease-in-out;
-	// border-bottom: 1px solid rgba($darkColor, 1);
 	background: $primaryColor;
 	text-transform: uppercase;
-	// background: transparent;
 	&:hover {
 		text-decoration: none;
 		background: $secondaryAlt;
@@ -99,21 +97,23 @@ a.page-numbers.current,
 }
 
 .submit-btn {
-	background: $primaryColor !important;
 	color: $lightColor;
 	padding: 15px 60px 15px 40px;
-
-	// position: relative;
-
-	// text-transform: uppercase;
 	&:hover {
-		background: $secondaryColor !important;
-		// background: darken($primaryColor , 10%) !important;
+	color: $lightColor;
+		background: transparent;
 	}
 }
 
 .type-submitbutton {
 	position: relative;
+	background-color: $primaryColor;
+	&:hover {
+		color: $secondaryColor !important;
+	}
+	input {
+		background: transparent !important;
+	}
 }
 .type-submitbutton::before {
     content: '';
@@ -124,7 +124,7 @@ a.page-numbers.current,
     background-size: 29px 29px;
     width: 29px;
     height: 29px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .disclaimer {

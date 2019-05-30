@@ -1,8 +1,3 @@
-/* 
-	- fix submit button z index 
-	- add homepage curves
-
- */
 
 header,
 .welcome-parallax,
@@ -58,7 +53,7 @@ footer,
 	}
 	@include media($desktop) {
 		background: none;
-		height: 100vh;
+		height: calc(100vh - 240px;) ;
 		min-height: 768px;
 	}
 	position: relative;
@@ -194,6 +189,82 @@ footer,
 }
 
 
+/* Homepage Curves */
+
+.bg-header-cruve-home-mobile {
+	background: url('images/bg-header-curve.png') bottom center;
+	position: relative;
+	height: 40px;
+	top: -60px;
+	@include media($tablet) {
+		height: 60px;
+		top: -80px;
+	}
+	@include media($desktop) {
+		height: 0px;
+	}
+}
+
+
+.bg-header-cruve-home {
+	background: url('images/bg-header-curve.png') bottom center;
+	height: 0px;
+	@include media($desktop) {
+		position: relative;
+		height: 140px;
+		bottom: 0px;
+		top: auto;
+	}
+	@include media($full) {
+		background-size: 150% auto;
+	}
+}
+.bg-header-cruve {
+	background: url('images/bg-header-curve.png') bottom center;
+	position: relative;
+	bottom: 0px;
+	right: 0px;
+	left: 0;
+	z-index: 1;
+	height: 140px;
+	@include media($full) {
+		background-size: 150% auto;
+	}
+}
+.bg-header-cruve-red-top {
+	background: url('images/bg-header-curve-red-top.png') bottom center;
+	position: relative;
+	bottom: 0px;
+	right: 0px;
+	left: 0;
+	z-index: 1;
+	height: 140px;
+	@include media($full) {
+		background-size: 150% auto;
+	}
+}
+
+.int-header {
+	@include media($tablet) {
+		position: relative;
+	}
+}
+.bg-header-cruve-inside {
+	background: url('images/bg-header-curve.png') bottom center;
+	position: absolute;
+	height: 140px;
+	width: 100%;
+	top: 210px;
+	@include media($tablet) {
+		top: auto;
+		bottom: 0px;
+		right: 0px;
+		left: 0;
+	}
+	@include media($full) {
+		background-size: 150% auto;
+	}
+}
 
 .the-line {
 	background-color: $primaryColor;
@@ -381,7 +452,8 @@ footer,
 		background-position-y: top 120px; 
 		background-repeat: no-repeat;
 		padding-top: 250px;
-		padding-bottom: 150px;
+		// padding-bottom: 150px;
+		// margin-bottom: 150px;
 	}
 	@include media($full) {
 		background-size: 135vw auto;
@@ -393,11 +465,16 @@ footer,
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		margin-top:80px;
+		margin-bottom: 100px;
 		@include media($tablet) {
-			// margin-top: 250px;
+			margin-top: 0px;
 			margin-bottom: 100px;
 			flex-wrap: nowrap;
 			justify-content: center;
+		}
+		@include media($desktop) {
+			padding-bottom: 150px;
 		}
 	}
 	li {
@@ -494,12 +571,12 @@ footer,
 .home-before-after {
 	background: $primaryColor;
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 0px;
 	@include media($tablet) {
 		padding-top: 60px;
-		padding-bottom: 100px;
+		padding-bottom: 0px;
 		// border-radius: 100px;
-		border-radius: 0% 0% 150vh 150vh / 0% 0% 30vh 30vh;
+		// border-radius: 0% 0% 150vh 150vh / 0% 0% 30vh 30vh;
 	}
 	h2 {
 		padding-left: 20px;
@@ -599,6 +676,7 @@ footer,
 		width: 100%;
 		@include media($tablet) {
 			width: auto;
+			margin-bottom: 40px;
 		}
 	}
 }

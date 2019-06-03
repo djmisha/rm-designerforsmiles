@@ -783,6 +783,140 @@ body.inside.tmpl_type_page_landing {
 			}
 		}
 	}
+	#Candidates {
+		color: $lightColor;
+		h2 {
+			color: $lightColor;
+			text-align: center;
+			border-bottom: 5px solid $lightColor;
+			@include media($tablet) {
+				padding-bottom: 60px;
+				margin-bottom: 40px;
+			}
+		}
+		ul li {
+			@include media($tablet) {
+				padding-top: 10px;
+				border-top: 1px solid $primaryColor;
+				font-size: 17px;
+			}
+		}
+		ul li:before {
+			background: $lightColor;
+			@include media($tablet) {
+				top: 20px;
+			}
+		}
+	}
+	#DENTAL-ICONS {
+		// display: none;
+		max-width: 1400px;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		> div {
+			@include media($desktop) {
+				
+			width: 40% !important;
+			}
+		} 
+	}
+	.flexible-testimonial {
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 40px;
+		@include media($desktop) {
+			padding-left: 100px;
+			padding-right: 100px;
+			margin-top: 200px;
+		}
+	}
+
+	.flexible-testimonial-video {
+		margin: 0 auto;
+		max-width: 600px;
+		video {
+			box-shadow: 10px 10px 20px rgba( $darkColor, .4);
+		}
+		@include media($desktop) {
+			margin-top: -140px;
+		}
+	}
+	.testimonial-group {
+		max-width: 500px;
+		@include media($desktop) {
+			padding-left: 40px;
+		}
+	}
+	.testimonial-group p {
+		text-align: left;
+	}
+	.flexibile-contain {
+		max-width: 1600px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column-reverse;
+		@include media($desktop) {
+			flex-direction: row;
+		}
+		> div {
+			width: 100%;
+			@include media($desktop) {
+				width: 50%;
+			}
+		}
+	}
+	#System {
+		background: url('images/bg-curves-yellow.jpg');
+		background-repeat: no-repeat !important;
+		@include media($desktop) {
+			flex-direction: row;
+			background-size: cover !important;
+		}
+		img {
+			@include media($desktop) {
+				margin-left: 40px;
+			}
+		}
+	}
+	.rmrr-sprinke-container {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	#Cost {
+		flex-direction: row-reverse !important;
+		background: url('images/bg-curves-yellow-reverse.jpg');
+		background-repeat: no-repeat !important;
+		@include media($desktop) {
+			flex-direction: row;
+			background-size: cover !important;
+			margin-bottom: 40px;
+		}
+		.with-bg {
+			@include media($desktop) {
+				margin-right: 40px;
+			}
+		}
+	}
+
+	#CONTACTUS {
+		// display: none;
+		color: $lightColor;
+		h3 {
+			color: $lightColor;
+			@include media($tablet) {
+				text-align: center;
+				border-bottom: 1px solid $lightColor;
+				font-size: 24px;
+				max-width: 580px;
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
+		}
+		a {
+		color: $lightColor;
+
+		}
+	}
 }
 
 

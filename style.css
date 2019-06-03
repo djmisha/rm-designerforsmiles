@@ -6005,6 +6005,233 @@ body.inside.tmpl_type_page_landing section.site-crumbs {
   }
 }
 
+/*============================================
+=            Dental Implants Page            =
+============================================*/
+.page-25 #Benefits {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+  background: url("images/bg-curves-yellow-reverse.jpg");
+  background-repeat: no-repeat !important;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 #Benefits {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-size: cover !important;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 #Benefits .with-bg {
+    margin-right: 40px;
+  }
+}
+
+.page-25 #Candidates {
+  color: #ffffff;
+}
+
+.page-25 #Candidates h2 {
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 5px solid #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-25 #Candidates h2 {
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-25 #Candidates ul li {
+    padding-top: 10px;
+    border-top: 1px solid #701b15;
+    font-size: 17px;
+  }
+}
+
+.page-25 #Candidates ul li:before {
+  background: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-25 #Candidates ul li:before {
+    top: 20px;
+  }
+}
+
+.page-25 #DENTAL-ICONS {
+  max-width: 1400px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 #DENTAL-ICONS > div {
+    width: 40% !important;
+  }
+}
+
+.page-25 .flexible-testimonial {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 .flexible-testimonial {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 200px;
+  }
+}
+
+.page-25 .flexible-testimonial-video {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.page-25 .flexible-testimonial-video video {
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 .flexible-testimonial-video {
+    margin-top: -140px;
+  }
+}
+
+.page-25 .testimonial-group {
+  max-width: 500px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 .testimonial-group {
+    padding-left: 40px;
+  }
+}
+
+.page-25 .testimonial-group p {
+  text-align: left;
+}
+
+.page-25 .flexibile-contain {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 .flexibile-contain {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.page-25 .flexibile-contain > div {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 .flexibile-contain > div {
+    width: 50%;
+  }
+}
+
+.page-25 #System {
+  background: url("images/bg-curves-yellow.jpg");
+  background-repeat: no-repeat !important;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 #System {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-size: cover !important;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 #System img {
+    margin-left: 40px;
+  }
+}
+
+.page-25 .rmrr-sprinke-container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-25 #Cost {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+  background: url("images/bg-curves-yellow-reverse.jpg");
+  background-repeat: no-repeat !important;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 #Cost {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-size: cover !important;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-25 #Cost .with-bg {
+    margin-right: 40px;
+  }
+}
+
+.page-25 #CONTACTUS {
+  color: #ffffff;
+}
+
+.page-25 #CONTACTUS h3 {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-25 #CONTACTUS h3 {
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+    font-size: 24px;
+    max-width: 580px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+.page-25 #CONTACTUS a {
+  color: #ffffff;
+}
+
 /*=======================================
 =            Invisalign Page            =
 =======================================*/
@@ -8415,15 +8642,18 @@ aside li {
 }
 
 .flexible-multicolumn > div {
-  margin-bottom: 40px;
-  max-width: 600px;
+  margin-bottom: 60px;
 }
 
 @media only screen and (min-width: 1080px) {
   .flexible-multicolumn > div {
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-bottom: 100px;
   }
+}
+
+.flexible-multicolumn > div p {
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -8446,6 +8676,22 @@ aside li {
         justify-content: space-around;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+}
+
+.flexible-multicolumn h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  border-bottom: none;
+  text-align: center;
+  color: #701b15;
+}
+
+@media only screen and (min-width: 768px) {
+  .flexible-multicolumn h3 {
+    font-size: 24px;
+    font-weight: bold;
   }
 }
 

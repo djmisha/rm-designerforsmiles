@@ -92,12 +92,15 @@
 	}
 
 	> div {
-		margin-bottom: 40px;
-		max-width: 600px;
+		margin-bottom: 60px;
 		@include media($desktop) {
-			padding-left: 40px;
-			padding-right: 40px;
-			// margin-bottom: 0;
+			// padding-left: 40px;
+			// padding-right: 40px;
+			margin-bottom: 100px;
+		}
+		p {
+			margin: 0 auto;
+			max-width: 500px;
 		}
 	}
 	@include media($tablet) {
@@ -113,7 +116,17 @@
 	}
 	// @include media(1300px) {
 	// }
-	h2 {
+	h3 {
+		margin-top: 0;
+		margin-bottom: 20px;
+		padding-bottom: 0;
+		border-bottom: none;
+		text-align: center;
+		color: $primaryColor;
+		@include media($tablet) {
+			font-size: 24px;
+			font-weight: bold;
+		}
 	}
 	ul {
 		list-style: none;

@@ -4376,7 +4376,7 @@ h4 {
   font-size: 24px;
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 768px) {
   h4 {
     font-size: 30px;
   }
@@ -4387,7 +4387,7 @@ h6 {
   font-size: 22px;
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 768px) {
   h5,
   h6 {
     font-size: 28px;
@@ -4442,6 +4442,14 @@ main,
   .is--device main,
   .is--device .contain {
     padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .is--device.is--ipad section,
+  .is--device.is--ipad main,
+  .is--device.is--ipad .contain {
+    padding: 20px calc(40px + (50% - (1080px / 2))) !important;
   }
 }
 
@@ -4510,7 +4518,10 @@ main,
 }
 
 .is--ipad .menu-trigger {
+  position: absolute;
+  left: 0px;
   display: block;
+  width: 65px;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -5768,8 +5779,8 @@ body.inside {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  background-repeat: no-repeat !important;
   background: url("images/bg-curves-yellow-reverse.jpg");
+  background-repeat: no-repeat !important;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -5984,6 +5995,60 @@ body.inside.tmpl_type_page_landing section.site-crumbs {
 @media only screen and (min-width: 1480px) {
   .tmpl_type_page_landing header .flexible-basic-content p {
     margin-left: -150px;
+  }
+}
+
+#How-Does-Invisalign-Work {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+  background: url("images/bg-curves-yellow-reverse.jpg");
+  background-repeat: no-repeat !important;
+}
+
+@media only screen and (min-width: 1080px) {
+  #How-Does-Invisalign-Work {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-size: cover !important;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  #How-Does-Invisalign-Work .with-bg {
+    margin-right: 40px;
+  }
+}
+
+#INV-ICONS {
+  padding-top: 0px;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  #INV-ICONS {
+    padding-top: 50px;
+  }
+}
+
+#INV-ICONS > div {
+  padding-left: 0;
+  padding-right: 0;
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  #INV-ICONS > div {
+    width: 25%;
   }
 }
 
@@ -6484,6 +6549,13 @@ aside li {
   .upper-footer {
     padding-top: 120px;
     padding-bottom: 240px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .is--device.is--ipad .upper-footer {
+    padding-top: 120px !important;
+    padding-bottom: 240px !important;
   }
 }
 
@@ -7935,17 +8007,20 @@ aside li {
 }
 
 .tmpl_type_single h1 {
-  text-align: center;
-  font-family: kepler-std-display, serif;
-  font-size: 25px !important;
-  line-height: 25px;
-  font-weight: normal;
+  color: #000;
+  font-weight: 100;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  border-bottom: 5px solid #701b15;
+  font-size: 30px;
+  line-height: 40px;
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 768px) {
   .tmpl_type_single h1 {
-    font-size: 40px !important;
-    line-height: 45px;
+    font-size: 44px;
+    line-height: 56px;
   }
 }
 
@@ -8191,8 +8266,15 @@ aside li {
 /*=====================================
 =            Slpit Section            =
 =====================================*/
+.flexible-split-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 @media only screen and (min-width: 1080px) {
   .flexible-split-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8220,12 +8302,18 @@ aside li {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
+  min-height: 350px;
 }
 
-@media only screen and (min-width: 768px) {
-  .flexible-split-section .with-bg {
-    min-height: 800px;
+.flexible-split-section .with-bg img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1080px) {
+  .flexible-split-section .with-bg img {
+    max-width: 800px;
+    -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -8235,7 +8323,6 @@ aside li {
 
 .flexible-split-section .with-content p, .flexible-split-section .with-content ul, .flexible-split-section .with-content ol {
   margin: 0 auto;
-  max-width: 600px;
 }
 
 .flexible-split-section .with-content p {
@@ -8249,13 +8336,22 @@ aside li {
 
 @media only screen and (min-width: 768px) {
   .flexible-split-section .with-content {
-    padding: 50px 70px;
+    padding: 50px 40px;
+  }
+  .flexible-split-section .with-content h2 {
+    padding-bottom: 50px;
   }
 }
 
 @media only screen and (min-width: 1080px) {
   .flexible-split-section .with-content {
-    padding: 100px 70px;
+    padding: 50px 70px;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .flexible-split-section .with-content {
+    padding: 50px 100px;
   }
 }
 

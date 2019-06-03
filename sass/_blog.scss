@@ -135,17 +135,19 @@
 		text-decoration: none;
 	}
 	h1 {
-		text-align: center;
-		font-family: $secondaryFont;
-		font-size: 25px !important;
-		line-height: 25px;
-		font-weight: normal;
-		@include media($desktop) {
-			font-size: 40px !important;
-			line-height: 45px;
+		color: $darkColor;
+		font-weight: 100;
+		padding-bottom: 20px;
+		margin-bottom: 25px  	;
+		margin-top: 0px;
+		border-bottom: 5px solid $primaryColor;
+		font-size: 30px;
+		line-height: 40px;
+		@include media($tablet) {
+			font-size: 44px;
+			line-height: 56px;
 		}
 	}
-
 }
 
 .from-blog {

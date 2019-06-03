@@ -7,6 +7,7 @@
 
 <div class="welcome-parallax will-parallax parallax-welcome b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-welcome.jpg">
 	<div class="welcome" id="skiptomaincontent">
+
 		<div class="welcome-cta">
 			<div class="bg-header-cruve-home-mobile"></div>
 			<div class="welcome-logo">

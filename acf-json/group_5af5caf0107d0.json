@@ -27,7 +27,7 @@
             {
                 "param": "nav_menu_item",
                 "operator": "==",
-                "value": "2"
+                "value": "all"
             }
         ]
     ],
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1555947817
+    "modified": 1559336995
 }

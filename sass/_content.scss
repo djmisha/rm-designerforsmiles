@@ -1,13 +1,8 @@
 .content {
-	// font-family: $secondaryFont;
 	padding-bottom: 60px;
 	@include media($desktop) {
 		margin-bottom: 0;
 		padding-bottom: 100px;
-		// max-width: 1280px;
-		// margin: 0 auto;
-		// width: calc(100% - 350px);
-		// padding-right: 60px;
 	}
 	b,
 	strong {
@@ -124,7 +119,6 @@ article p ~ h2 {
 		}
 		.current-crumb-item {
 			text-decoration: none;
-			// color: $tertiaryAlt;
 		}
 	}
 }
@@ -176,8 +170,6 @@ body.inside {
 				position: relative;
 				margin-bottom: 7px;
 				padding-left: 30px;
-				// text-transform: uppercase;
-				// font-style: italic;
 				&:before {
 					content: "";
 					color: $primaryColor;
@@ -224,7 +216,6 @@ body.inside {
 				}
 			}
 			a {
-			// letter-spacing: 1px;
 			font-style: normal;
 			color: $darkColor;
 			text-decoration: none;
@@ -577,13 +568,10 @@ body.inside {
 
 .page-feature {
 	padding: 0;
-	// box-shadow: 10px 10px 15px rgba($primaryColor, .3);
-	// border: 1px solid rgba($lightColor, .3);
 	display: flex;
 	flex-direction: column-reverse;
-	background-repeat: no-repeat !important;
-	// background-color: #fbfcf9;
 	background: url('images/bg-curves-yellow-reverse.jpg');
+	background-repeat: no-repeat !important;
 	@include media($desktop) {
 		flex-direction: row;
 		background-size: cover !important;
@@ -766,6 +754,43 @@ body.inside.tmpl_type_page_landing {
 			@include media($full) {
 				margin-left: -150px;
 			}
+		}
+	}
+}
+
+
+
+#How-Does-Invisalign-Work {
+	flex-direction: row-reverse !important;
+	background: url('images/bg-curves-yellow-reverse.jpg');
+	background-repeat: no-repeat !important;
+	@include media($desktop) {
+		flex-direction: row;
+		background-size: cover !important;
+		margin-bottom: 40px;
+	}
+	.with-bg {
+		@include media($desktop) {
+			margin-right: 40px;
+		}
+	}
+}
+
+#INV-ICONS {
+	padding-top: 0px;
+	padding-bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	@include media($tablet) {
+		padding-top: 50px;
+		
+	}
+	> div {
+		padding-left: 0; 
+		padding-right: 0;
+		width: 50%;
+		@include media($tablet) {
+			width: 25%;
 		}
 	}
 }

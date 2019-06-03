@@ -272,7 +272,6 @@
 }
 
 
-
 .upper-footer {
 	background-color: #e8e5e5;
 	padding-top: 40px;
@@ -281,6 +280,12 @@
 	@include media($tablet) {
 		padding-top: 120px;
 		padding-bottom: 240px;
+	}
+	@include media($desktop) {
+		.is--device.is--ipad & { 
+			padding-top: 120px !important;
+			padding-bottom: 240px !important;
+		}
 	}
 	.footer-splitter {
 		@include media($tablet) {

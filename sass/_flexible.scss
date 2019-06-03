@@ -22,24 +22,23 @@
 			margin: 0 auto;
 		}
 		li {
-				text-align: center;
-				@include media($tablet) {
-					@include font(24px, .9em);
-					font-weight: 100;
-					border-right: 1px solid $darkColor;
-					padding-right: 10px;
-					padding-left: 10px;
-					margin-bottom: 30px;
-					&:last-of-type {
-						border-right: none;
-					}
-				}
-				&:before {
-					display: none;
+			text-align: center;
+			@include media($tablet) {
+				@include font(24px, .9em);
+				font-weight: 100;
+				border-right: 1px solid $darkColor;
+				padding-right: 10px;
+				padding-left: 10px;
+				margin-bottom: 30px;
+				&:last-of-type {
+					border-right: none;
 				}
 			}
+			&:before {
+				display: none;
+			}
+		}
 		a {
-			// letter-spacing: 1px;
 			font-style: normal;
 			color: $darkColor;
 			text-decoration: none;
@@ -151,6 +150,8 @@
 =            Slpit Section            =
 =====================================*/
 .flexible-split-section {
+	margin-top: 40px;
+	margin-bottom: 40px;
 	// border: 1px solid red;
 	// background-color: $tertiaryColor;
 	@include media($tablet) {
@@ -158,6 +159,8 @@
 		// flex-direction: column-reverse;
 	}
 	@include media($desktop) {
+		margin-top: 100px;
+		margin-bottom: 100px;
 		display: flex;
 		
 	}
@@ -179,17 +182,23 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		min-height: 400px;
+		min-height: 350px;
 		@include media($tablet) {
-			min-height: 800px;
+			// min-height: 800px;
+		}
+		img {
+			width: 100%;
+			@include media($desktop) {
+				max-width: 800px;
+				box-shadow: 10px 10px 20px rgba( $darkColor, .4);
+			}
 		}
 	}
 	.with-content {
-		// background-color: #fbfcf9; 
 		padding: 40px 20px;
 		p, ul, ol {
 			margin: 0 auto;
-			max-width: 600px;
+			// max-width: 600px;
 		}
 		p {
 			margin-top: 1em;
@@ -199,10 +208,16 @@
 			margin-bottom: 2em;
 		}
 		@include media($tablet) {
-			padding: 50px 70px;
+			padding: 50px 40px;
+			h2 {
+				padding-bottom: 50px;
+			}
 		}
 		@include media($desktop) {
-			padding: 100px 70px;
+			padding: 50px 70px;
+		}
+		@include media($full) {
+			padding: 50px 100px;
 		}
 	}
 }

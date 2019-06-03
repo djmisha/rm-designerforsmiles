@@ -784,7 +784,12 @@ body.inside.tmpl_type_page_landing {
 		}
 	}
 	#Candidates {
+		background-position: left center;
+		background-position-x: left -200px; 
 		color: $lightColor;
+		@include media($tablet) {
+			background-position: center center;
+		}
 		h2 {
 			color: $lightColor;
 			text-align: center;
@@ -899,22 +904,21 @@ body.inside.tmpl_type_page_landing {
 	}
 
 	#CONTACTUS {
-		// display: none;
+		background-position: top right; 
 		color: $lightColor;
 		h3 {
 			color: $lightColor;
+			border-bottom: 1px solid $lightColor;
+			margin: 0 auto;
+			margin-bottom: 30px;
 			@include media($tablet) {
 				text-align: center;
-				border-bottom: 1px solid $lightColor;
 				font-size: 24px;
 				max-width: 580px;
-				margin: 0 auto;
-				margin-bottom: 30px;
 			}
 		}
 		a {
-		color: $lightColor;
-
+			color: $lightColor;
 		}
 	}
 }

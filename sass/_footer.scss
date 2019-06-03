@@ -125,7 +125,7 @@
 	padding-left: 20px;
 	padding-right: 20px;
 
-	@include media($tablet) {
+	@include media($desktop) {
 		transition: all .2s ease-out;
 		height: auto;
 		bottom: -70px;
@@ -137,13 +137,13 @@
 
 	&.sticky-fixed {
 		bottom: 0px;
-		@include media($tablet) {
+		@include media($desktop) {
 			bottom: 0px;
 		}
 	}
 	&.sticky-mobile-fixed {
 		bottom: 0px;
-		@include media($tablet) {
+		@include media($desktop) {
 			bottom: 0px;
 		}
 	}
@@ -152,7 +152,7 @@
 		flex-direction: column;
 		align-items: center;
 		// width: auto;
-		@include media($tablet) {
+		@include media($desktop) {
 			justify-content: center;
 			flex-direction: row;
 			// width: calc( 100% - 180px);
@@ -180,7 +180,7 @@
 				background: #fff;
 				font-size: 16px;
 				margin-bottom: 10px;
-				@include media($tablet) {
+				@include media($desktop) {
 					margin-bottom: 0;
 					width: auto;
 				}
@@ -226,7 +226,7 @@
 		margin-top: 20px;
 		margin-bottom: 20px;
 		line-height: 20px;
-		@include media($tablet) {
+		@include media($desktop) {
 			margin-right: 20px;
 		}
 	}
@@ -250,7 +250,7 @@
 		left: 0px;
 		// top: 20px;
 		display: block;
-		@include media($tablet) {
+		@include media($desktop) {
 			display: none;
 		}
 		a {
@@ -427,6 +427,10 @@
 	}
 }
 
+
+.reviews_markup span {
+	color: $darkColor;
+}
 
 .copyright,
 .rm-sig {

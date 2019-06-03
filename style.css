@@ -4519,9 +4519,16 @@ main,
 
 .is--ipad .menu-trigger {
   position: absolute;
-  left: 0px;
+  right: 0px;
   display: block;
   width: 65px;
+}
+
+@media only screen and (min-width: 1330px) {
+  .is--ipad .menu-trigger {
+    right: auto;
+    left: 0px;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -6035,7 +6042,15 @@ body.inside.tmpl_type_page_landing section.site-crumbs {
 }
 
 .page-25 #Candidates {
+  background-position: left center;
+  background-position-x: left -200px;
   color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-25 #Candidates {
+    background-position: center center;
+  }
 }
 
 .page-25 #Candidates h2 {
@@ -6210,21 +6225,22 @@ body.inside.tmpl_type_page_landing section.site-crumbs {
 }
 
 .page-25 #CONTACTUS {
+  background-position: top right;
   color: #ffffff;
 }
 
 .page-25 #CONTACTUS h3 {
   color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 768px) {
   .page-25 #CONTACTUS h3 {
     text-align: center;
-    border-bottom: 1px solid #ffffff;
     font-size: 24px;
     max-width: 580px;
-    margin: 0 auto;
-    margin-bottom: 30px;
   }
 }
 
@@ -6759,7 +6775,7 @@ aside li {
   padding-right: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .sticky-form {
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
@@ -6781,7 +6797,7 @@ aside li {
   bottom: 0px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .sticky-form.sticky-fixed {
     bottom: 0px;
   }
@@ -6791,7 +6807,7 @@ aside li {
   bottom: 0px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .sticky-form.sticky-mobile-fixed {
     bottom: 0px;
   }
@@ -6810,7 +6826,7 @@ aside li {
           align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .sticky-form form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -6851,7 +6867,7 @@ aside li {
   margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .sticky-form form .type-singlelinetext input,
   .sticky-form form .type-singlelinetext textarea,
   .sticky-form form .type-textarea input,
@@ -6904,7 +6920,7 @@ aside li {
   line-height: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .sticky-form span {
     margin-right: 20px;
   }
@@ -6929,7 +6945,7 @@ aside li {
   display: block;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .sticky-form .mobile-social {
     display: none;
   }
@@ -7172,6 +7188,10 @@ aside li {
   .lower-footer {
     padding-bottom: 80px;
   }
+}
+
+.reviews_markup span {
+  color: #000;
 }
 
 .copyright,

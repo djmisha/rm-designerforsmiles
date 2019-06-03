@@ -53,7 +53,7 @@
 			<?php while(have_rows('featured_procedures_1')): the_row(); ?>
 				<li style="background-image: url('<?php the_sub_field('image'); ?>');" class="wow fadeIn" data-wow-offset="20" data-wow-delay=".<?echo $count; ?>0s" data-wow-duration=".5s" >
 					<div class="proced-name">
-						<a href="<?php the_sub_field('headline_link'); ?>">
+						<a href="<?php the_sub_field('procedure_link'); ?>">
 							<span><?php the_sub_field('headline'); ?></span>
 						</a>
 					</div>

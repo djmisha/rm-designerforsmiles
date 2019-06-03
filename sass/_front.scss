@@ -53,7 +53,7 @@ footer,
 	}
 	@include media($desktop) {
 		background: none;
-		height: calc(100vh - 240px;) ;
+		height: 105vh;
 		min-height: 768px;
 	}
 	position: relative;
@@ -278,7 +278,6 @@ footer,
 	@include media($desktop) {
 		left:-40px;
 		width: calc(100% + 80px);
-		
 	}
 }
 
@@ -347,6 +346,7 @@ footer,
 		line-height: 44px;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		font-style: italic;
 		@include media($tablet) {
 			padding-top: 26vw;
 			padding-bottom: 0px;
@@ -362,12 +362,7 @@ footer,
 			line-height: 55px;
 		}
 		@include media(1680px) {
-			padding-top: 450px;
-		}
-		.doc-quote {
-			p {
-
-			}
+			padding-top: 490px;
 		}
 		position: relative; 
 		z-index: 0;
@@ -420,6 +415,9 @@ footer,
 			> a {
 				width: 32%;
 			}
+		}
+		@include media($full) {
+			padding-top: 490px;
 		}
 		a {
 			display: block;
@@ -677,6 +675,9 @@ footer,
 		@include media($tablet) {
 			width: auto;
 			margin-bottom: 40px;
+		}
+		&:hover {
+			background: $primaryAlt;
 		}
 	}
 }

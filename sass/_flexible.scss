@@ -231,19 +231,19 @@
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	background: $secondaryAlt;
 	@include media($tablet) {
 		background-position: bottom center !important;
-		padding-top: 150px;
+		padding-top: 50px;
 		padding-bottom: 60px;
-		padding-right: 20%;
 	}
 	@include media($desktop) {
-		padding-right: 50%;
 	}
 	h2 {
+		max-width: 600px;
+		margin: 0 auto;
+		margin-bottom: 30px;
 		text-align: center;
-		font-family: $secondaryFont;
-		color: $lightColor;
 	}
 
 	.more {
@@ -253,28 +253,26 @@
 			margin-bottom: 50px;
 		}
 		a {
-			color: $primaryColor !important;
-			background-color: $secondaryColor;
+			&:hover {
+				background: $primaryAlt;
+			}
 		}
 	}
 
 	.bnacase-imgset {
 		clear: both;
 		margin: 0 auto;
-		// border: 1px solid red;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		// padding: 20px;
 		text-align: left;
 		text-transform: uppercase;
-		// width: 1005;
 		margin-bottom: 20px;
 
 		@include media($tablet) {
 			margin-bottom: 0;
-			width: 500px;
+			width: 800px;
 		}
 
 		.before,

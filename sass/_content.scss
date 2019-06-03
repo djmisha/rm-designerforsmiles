@@ -216,41 +216,41 @@ body.inside {
 				}
 			}
 			a {
-			font-style: normal;
-			color: $darkColor;
-			text-decoration: none;
-			border-bottom: 2px solid transparent;
-			&:hover {
-				color: $primaryColor;
-				border-bottom: 2px solid $primaryColor;
+				font-style: normal;
+				color: $darkColor;
+				text-decoration: none;
+				border-bottom: 2px solid transparent;
+				&:hover {
+					color: $primaryColor;
+					border-bottom: 2px solid $primaryColor;
+				}
 			}
 		}
-	}
-	ol {
-		counter-reset: item;
-		margin: 1em 10px;
-		@include media($tablet) {
-			margin: 3em 50px;
-		}
-		> li {
-			display: block;
-			position: relative;
+		ol {
+			counter-reset: item;
+			margin: 1em 10px;
+			@include media($tablet) {
+				margin: 3em 50px;
+			}
+			> li {
+				display: block;
+				position: relative;
 
-			margin-bottom: 7px;
-			padding-left: 30px;
+				margin-bottom: 7px;
+				padding-left: 30px;
 
-			&:before {
-				left: 0px;
-				position: absolute;
-				content: counter(item) ". ";
-				counter-increment: item;
-				color: $primaryColor;
-				font-weight: bold;
+				&:before {
+					left: 0px;
+					position: absolute;
+					content: counter(item) ". ";
+					counter-increment: item;
+					color: $primaryColor;
+					font-weight: bold;
+				}
 			}
 		}
-	}
 
-	blockquote {
+		blockquote {
 			// color: $secondaryColor;
 			margin: 40px 0;
 			margin-left: -20px;
@@ -368,7 +368,6 @@ body.inside {
 			}
 		} 
 	}
-
 }
 
 
@@ -534,6 +533,10 @@ body.inside {
 		z-index: 0;
 		left: calc(50% - 100px);
 		top: 40px;
+		@include media($tablet) {
+			top: 80px;
+			left: calc(50% + 200px);
+		}
 	}
 
 	p {
@@ -759,38 +762,190 @@ body.inside.tmpl_type_page_landing {
 }
 
 
+/*============================================
+=            Dental Implants Page            =
+============================================*/
 
-#How-Does-Invisalign-Work {
-	flex-direction: row-reverse !important;
-	background: url('images/bg-curves-yellow-reverse.jpg');
-	background-repeat: no-repeat !important;
-	@include media($desktop) {
-		flex-direction: row;
-		background-size: cover !important;
-		margin-bottom: 40px;
-	}
-	.with-bg {
+
+.page-25 {
+	#Benefits {
+		flex-direction: row-reverse !important;
+		background: url('images/bg-curves-yellow-reverse.jpg');
+		background-repeat: no-repeat !important;
 		@include media($desktop) {
-			margin-right: 40px;
+			flex-direction: row;
+			background-size: cover !important;
+			margin-bottom: 40px;
+		}
+		.with-bg {
+			@include media($desktop) {
+				margin-right: 40px;
+			}
 		}
 	}
 }
 
-#INV-ICONS {
-	padding-top: 0px;
-	padding-bottom: 0;
-	display: flex;
-	flex-wrap: wrap;
-	@include media($tablet) {
-		padding-top: 50px;
-		
+
+
+
+/*=======================================
+=            Invisalign Page            =
+=======================================*/
+
+.page-23 {
+	#Invisalign {
+		flex-direction: row-reverse !important;
+		background: url('images/bg-curves-yellow-reverse.jpg');
+		background-repeat: no-repeat !important;
+		@include media($desktop) {
+			flex-direction: row;
+			background-size: cover !important;
+			margin-bottom: 40px;
+		}
+		.with-bg {
+			@include media($desktop) {
+				margin-right: 40px;
+			}
+		}
 	}
-	> div {
-		padding-left: 0; 
-		padding-right: 0;
-		width: 50%;
+
+	#INV-ICONS {
+		padding-top: 0px;
+		padding-bottom: 0;
 		@include media($tablet) {
-			width: 25%;
+			padding-top: 100px;
+		}
+		p {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			img {
+				// width: 50%;
+				height: auto;
+				margin-bottom: 30px;
+				@include media($tablet) {
+					margin-bottom: 0px;
+					width: auto;
+				}
+			}
+		}
+	}
+
+	.flexible-testimonial {
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 40px;
+		@include media($desktop) {
+			padding-left: 100px;
+			padding-right: 100px;
+			margin-top: 200px;
+		}
+	}
+
+	.flexible-testimonial-video {
+		margin: 0 auto;
+		max-width: 600px;
+		video {
+			box-shadow: 10px 10px 20px rgba( $darkColor, .4);
+		}
+		@include media($desktop) {
+			margin-top: -140px;
+		}
+	}
+	.testimonial-group {
+		max-width: 700px;
+		@include media($desktop) {
+			padding-left: 40px;
+		}
+	}
+	.testimonial-group p {
+		text-align: left;
+	}
+	.flexibile-contain {
+		max-width: 1600px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column-reverse;
+		@include media($desktop) {
+			flex-direction: row;
+		}
+		> div {
+			width: 100%;
+			@include media($desktop) {
+				width: 50%;
+			}
+		}
+	}
+
+
+	#Benefits {
+		color: $lightColor;
+		h2 {
+			color: $lightColor;
+			text-align: center;
+			border-bottom: 5px solid $lightColor;
+			@include media($tablet) {
+				padding-bottom: 60px;
+				margin-bottom: 40px;
+			}
+		}
+		ul li {
+			@include media($tablet) {
+				padding-top: 10px;
+				border-top: 1px solid $primaryColor;
+				font-size: 17px;
+			}
+		}
+		ul li:before {
+			background: $lightColor;
+			@include media($tablet) {
+				top: 20px;
+			}
+		}
+	}
+
+	#Results {
+		img {
+			width: 100%;
+			@include media($desktop) {
+				width: auto;
+			}
+		}
+	}
+
+	#Candidate {
+		background: url('images/bg-curves-yellow.jpg');
+		background-repeat: no-repeat !important;
+		@include media($desktop) {
+			flex-direction: row;
+			background-size: cover !important;
+		}
+		img {
+			@include media($desktop) {
+				margin-left: 40px;
+			}
+		}
+	}
+	#SPRINKLE {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		.rmrr-sprinke-container{
+			margin-bottom: 0;
+		}
+	}
+	#FAQ {
+		h2 {
+			text-align: center;
+			@include media($tablet) {
+				padding-bottom: 60px;
+				margin-bottom: 30px;
+				
+			}
+			@include media($full) {
+				width: calc( 100% + 80px);
+				margin-left: -40px;
+			}
 		}
 	}
 }
+

@@ -4484,8 +4484,8 @@ main,
   left: 0px;
   right: 0px;
   height: 60px;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -4987,8 +4987,8 @@ main,
   background: #7e211b;
   position: absolute;
   top: 40px;
-  left: 50%;
-  right: 50%;
+  left: 125px;
+  right: auto;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -5730,6 +5730,13 @@ body.inside {
   top: 40px;
 }
 
+@media only screen and (min-width: 768px) {
+  .onpage-reviews:before {
+    top: 80px;
+    left: calc(50% + 200px);
+  }
+}
+
 .onpage-reviews p {
   position: relative;
   z-index: 1;
@@ -5998,7 +6005,10 @@ body.inside.tmpl_type_page_landing section.site-crumbs {
   }
 }
 
-#How-Does-Invisalign-Work {
+/*=======================================
+=            Invisalign Page            =
+=======================================*/
+.page-23 #Invisalign {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: reverse !important;
       -ms-flex-direction: row-reverse !important;
@@ -6008,7 +6018,7 @@ body.inside.tmpl_type_page_landing section.site-crumbs {
 }
 
 @media only screen and (min-width: 1080px) {
-  #How-Does-Invisalign-Work {
+  .page-23 #Invisalign {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -6019,36 +6029,209 @@ body.inside.tmpl_type_page_landing section.site-crumbs {
 }
 
 @media only screen and (min-width: 1080px) {
-  #How-Does-Invisalign-Work .with-bg {
+  .page-23 #Invisalign .with-bg {
     margin-right: 40px;
   }
 }
 
-#INV-ICONS {
+.page-23 #INV-ICONS {
   padding-top: 0px;
   padding-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-23 #INV-ICONS {
+    padding-top: 100px;
+  }
+}
+
+.page-23 #INV-ICONS p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.page-23 #INV-ICONS p img {
+  height: auto;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 768px) {
-  #INV-ICONS {
-    padding-top: 50px;
+  .page-23 #INV-ICONS p img {
+    margin-bottom: 0px;
+    width: auto;
   }
 }
 
-#INV-ICONS > div {
-  padding-left: 0;
-  padding-right: 0;
-  width: 50%;
+.page-23 .flexible-testimonial {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-23 .flexible-testimonial {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 200px;
+  }
+}
+
+.page-23 .flexible-testimonial-video {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.page-23 .flexible-testimonial-video video {
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-23 .flexible-testimonial-video {
+    margin-top: -140px;
+  }
+}
+
+.page-23 .testimonial-group {
+  max-width: 700px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-23 .testimonial-group {
+    padding-left: 40px;
+  }
+}
+
+.page-23 .testimonial-group p {
+  text-align: left;
+}
+
+.page-23 .flexibile-contain {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-23 .flexibile-contain {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.page-23 .flexibile-contain > div {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-23 .flexibile-contain > div {
+    width: 50%;
+  }
+}
+
+.page-23 #Benefits {
+  color: #ffffff;
+}
+
+.page-23 #Benefits h2 {
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 5px solid #ffffff;
 }
 
 @media only screen and (min-width: 768px) {
-  #INV-ICONS > div {
-    width: 25%;
+  .page-23 #Benefits h2 {
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-23 #Benefits ul li {
+    padding-top: 10px;
+    border-top: 1px solid #701b15;
+    font-size: 17px;
+  }
+}
+
+.page-23 #Benefits ul li:before {
+  background: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-23 #Benefits ul li:before {
+    top: 20px;
+  }
+}
+
+.page-23 #Results img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-23 #Results img {
+    width: auto;
+  }
+}
+
+.page-23 #Candidate {
+  background: url("images/bg-curves-yellow.jpg");
+  background-repeat: no-repeat !important;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-23 #Candidate {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-size: cover !important;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-23 #Candidate img {
+    margin-left: 40px;
+  }
+}
+
+.page-23 #SPRINKLE {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.page-23 #SPRINKLE .rmrr-sprinke-container {
+  margin-bottom: 0;
+}
+
+.page-23 #FAQ h2 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-23 #FAQ h2 {
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .page-23 #FAQ h2 {
+    width: calc( 100% + 80px);
+    margin-left: -40px;
   }
 }
 
@@ -6222,6 +6405,8 @@ aside li {
     padding-right: 40px;
     padding-top: 90px;
     padding-bottom: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -6320,6 +6505,7 @@ aside li {
 
 .footer-recent-blogs a {
   text-decoration: none;
+  color: #000;
 }
 
 /*====================================
@@ -6340,15 +6526,16 @@ aside li {
   bottom: -500px;
   right: 0;
   left: 0;
-  border-top: 1px solid rgba(253, 244, 231, 0.4);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .sticky-form {
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
     height: auto;
     bottom: -70px;
     display: -webkit-box;
@@ -6420,13 +6607,17 @@ aside li {
   margin-bottom: 0;
 }
 
+.sticky-form form .type-singlelinetext,
+.sticky-form form .type-textarea {
+  width: 100%;
+}
+
 .sticky-form form .type-singlelinetext input,
 .sticky-form form .type-singlelinetext textarea,
 .sticky-form form .type-textarea input,
 .sticky-form form .type-textarea textarea {
   padding: 14px 20px;
   background: transparent !important;
-  width: 100%;
   border: 1px solid white;
   background: #fff;
   font-size: 16px;
@@ -6711,6 +6902,8 @@ aside li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -6719,8 +6912,22 @@ aside li {
           align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-logos ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .footer-logos li {
   margin: 0 10px;
+  width: 25%;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-logos li {
+    width: auto;
+  }
 }
 
 /*====================================
@@ -6976,7 +7183,7 @@ aside li {
 @media only screen and (min-width: 1080px) {
   .welcome {
     background: none;
-    height: calc(100vh - 240px);
+    height: 105vh;
     min-height: 768px;
   }
 }
@@ -7336,6 +7543,7 @@ aside li {
   line-height: 44px;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-style: italic;
   position: relative;
   z-index: 0;
 }
@@ -7362,7 +7570,7 @@ aside li {
 
 @media only screen and (min-width: 1680px) {
   .home-doctor .doc-quote {
-    padding-top: 450px;
+    padding-top: 490px;
   }
 }
 
@@ -7432,6 +7640,12 @@ aside li {
   }
   .home-doctor .doc-buttons > a {
     width: 32%;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .home-doctor .doc-buttons {
+    padding-top: 490px;
   }
 }
 
@@ -7773,6 +7987,10 @@ aside li {
     width: auto;
     margin-bottom: 40px;
   }
+}
+
+.home-before-after .button:hover {
+  background: #7e211b;
 }
 
 /* ------------------------
@@ -8362,27 +8580,22 @@ aside li {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  background: #fdf4e7;
 }
 
 @media only screen and (min-width: 768px) {
   .flexible-bna {
     background-position: bottom center !important;
-    padding-top: 150px;
+    padding-top: 50px;
     padding-bottom: 60px;
-    padding-right: 20%;
-  }
-}
-
-@media only screen and (min-width: 1080px) {
-  .flexible-bna {
-    padding-right: 50%;
   }
 }
 
 .flexible-bna h2 {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   text-align: center;
-  font-family: kepler-std-display, serif;
-  color: #ffffff;
 }
 
 .flexible-bna .more {
@@ -8396,9 +8609,8 @@ aside li {
   }
 }
 
-.flexible-bna .more a {
-  color: #701b15 !important;
-  background-color: #e1ab4c;
+.flexible-bna .more a:hover {
+  background: #7e211b;
 }
 
 .flexible-bna .bnacase-imgset {
@@ -8423,7 +8635,7 @@ aside li {
 @media only screen and (min-width: 768px) {
   .flexible-bna .bnacase-imgset {
     margin-bottom: 0;
-    width: 500px;
+    width: 800px;
   }
 }
 

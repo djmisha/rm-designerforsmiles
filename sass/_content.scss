@@ -956,11 +956,12 @@ body.inside.tmpl_type_page_landing {
 		p {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-around;
+			justify-content: space-between;
 			img {
-				// width: 50%;
+				width: auto;
 				height: auto;
-				margin-bottom: 30px;
+				margin-bottom: 50px;
+				margin-left: 0;
 				@include media($tablet) {
 					margin-bottom: 0px;
 					width: auto;
@@ -1087,3 +1088,13 @@ body.inside.tmpl_type_page_landing {
 	}
 }
 
+
+.page-326 .teen-videos {
+	@include media($tablet) {
+		display: flex;
+		justify-content: space-between;
+		> div {
+			width: 32%;
+		} 
+	}
+}

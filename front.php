@@ -14,7 +14,7 @@
 			<h1><a href="<?php bloginfo('url'); ?>"><div> <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Designer Smiles"> </div></a></h1> </div>
 			<h2><?php the_field('welcome_headline'); ?></h2>
 			<?php the_field('welcome_content'); ?>
-			<a href="<?php the_field('gallery_button'); ?>" class="button" rel="nofollow" rel="nofollow">Make an Appointment <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-cal.png" alt="icon"></a>
+			<a href="<?php bloginfo('url'); ?>/contact-us/" class="button" rel="nofollow" rel="nofollow">Make an Appointment <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-cal.png" alt="icon"></a>
 			<a href="<?php the_field('gallery_button'); ?>" class="button" rel="nofollow" rel="nofollow">Smile Gallery <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-photo.png" alt="icon"></a>
 		</div>
 	</div>

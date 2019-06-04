@@ -17,7 +17,7 @@
 						<a href="<?the_permalink();?>">
 							<div class="thumb"><?php the_post_thumbnail('thumbnail', array( 'alt' => trim(strip_tags( $post->post_title )),)); ?></div>
 							<div class="blog-head"><?the_title();?></div>	
-							<div class="excerpt"><?php my_excerpt(15); ?>
+							<div class="excerpt"><?php my_excerpt(12); ?>
 							<span>Read More</span></div>	
 						</a>
 					</li>

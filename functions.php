@@ -294,7 +294,7 @@ function my_excerpt($excerpt_length = 55, $id = false, $echo = true) {
 		$text = str_replace(']]>', ']]&gt;', $text);
 	  $text = strip_tags($text);
 
-		$excerpt_more = '[...]  <span>Read More</span>';
+		$excerpt_more = '[...]';
 		$words = preg_split("/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);
 		if ( count($words) > $excerpt_length ) {
 			array_pop($words);

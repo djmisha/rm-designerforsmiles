@@ -5294,7 +5294,7 @@ body.inside {
     background-position-x: calc(50% - 240px);
   }
   body.inside.tmpl_type_rmg_single_case {
-    background-position-y: calc(810px - 330px);
+    background-position-y: calc(810px - 230px);
   }
 }
 
@@ -6434,17 +6434,20 @@ body.inside.tmpl_type_page_landing section.site-crumbs {
 }
 
 .page-23 #Candidate {
+  margin-top: 0;
   background: url("images/bg-curves-yellow.jpg");
   background-repeat: no-repeat !important;
 }
 
 @media only screen and (min-width: 1080px) {
   .page-23 #Candidate {
+    margin-top: 100px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     background-size: cover !important;
+    margin-bottom: 0;
   }
 }
 
@@ -6454,12 +6457,38 @@ body.inside.tmpl_type_page_landing section.site-crumbs {
   }
 }
 
+@media only screen and (min-width: 1080px) {
+  .page-23 #Candidate div.with-bg img {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .page-23 #Candidate div.with-bg img {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-23 #Candidate div.with-content {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .page-23 #Candidate div.with-content {
+    padding-top: 50px;
+  }
+}
+
 .page-23 #SPRINKLE {
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 .page-23 #SPRINKLE .rmrr-sprinke-container {
+  margin-top: 0;
   margin-bottom: 0;
 }
 

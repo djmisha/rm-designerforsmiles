@@ -134,9 +134,10 @@ body.inside {
 		background-position-y: 810px; 
 		background-position-x:  calc(50% - 240px;); 
 		&.tmpl_type_rmg_single_case  {
-			background-position-y: calc(810px - 330px); 
+			background-position-y: calc(810px - 230px); 
 		}
 	}
+
 }
 
 .interior {
@@ -1053,15 +1054,37 @@ body.inside.tmpl_type_page_landing {
 	}
 
 	#Candidate {
+		margin-top: 0;
 		background: url('images/bg-curves-yellow.jpg');
 		background-repeat: no-repeat !important;
 		@include media($desktop) {
+			margin-top: 100px;
 			flex-direction: row;
 			background-size: cover !important;
+			margin-bottom: 0;
 		}
 		img {
 			@include media($desktop) {
 				margin-left: 40px;
+			}
+		}
+		div.with-bg img {
+			@include media($desktop) {
+				margin-top: 120px;
+			}
+			@include media($full) {
+				margin-top: 0;
+				margin-bottom: 80px;
+			}
+		}
+		div.with-content {
+			// display: none;
+			@include media($desktop) {
+				padding-top: 0;
+				
+			}
+			@include media($full) {
+				padding-top: 50px;
 			}
 		}
 	}
@@ -1069,6 +1092,7 @@ body.inside.tmpl_type_page_landing {
 		padding-bottom: 0;
 		margin-bottom: 0;
 		.rmrr-sprinke-container{
+			margin-top: 0;
 			margin-bottom: 0;
 		}
 	}

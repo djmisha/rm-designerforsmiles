@@ -86,7 +86,7 @@
 		<h1><?//php echo $category_title ?> Smile Gallery</h1>
 	<?php elseif(this_is('gallery-child')): ?>
 		<?php $category_title =  get_the_title($post->in_cat_ID); ?>
-		<h1><?php //echo $category_title ?> Smile Gallery</h1>
+		<h1 id="smilegallery"><?php //echo $category_title ?> Smile Gallery</h1>
 	<?php elseif(this_is('gallery')): ?>
 		<h1>Smile Gallery</h1>
 	<?php elseif (is_archive() =='newsroom'): ?>

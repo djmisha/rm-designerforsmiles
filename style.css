@@ -6524,6 +6524,14 @@ body.inside.tmpl_type_page_landing section.site-crumbs {
   }
 }
 
+.page-21 .page-feature {
+  margin-bottom: 0 !important;
+}
+
+.page-21 .page-feature .feature-content {
+  padding-bottom: 0;
+}
+
 /* ------------------------
 	Aside
 ------------------------ */
